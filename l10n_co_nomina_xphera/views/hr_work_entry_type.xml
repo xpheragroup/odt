@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_work_entry_type_festivos">
+            <field name="name">hr.work.entry.type.festivos</field>
+            <field name="model">hr.work.entry.type</field>
+            <field name="inherit_id" ref="hr_work_entry.hr_work_entry_type_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sequence']" position="after">
+                    <field name="pagar_festivos" invisible="False"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

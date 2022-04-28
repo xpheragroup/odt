@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_leave_type_habiles">
+            <field name="name">hr.leave.type.habiles</field>
+            <field name="model">hr.leave.type</field>
+            <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='calendar']" position="after">
+                    <group name="tiempo_limite" string="Límite de Tiempo">
+                        <field name="limite"/>
+                        <label for="cantidad_limite" attrs="{'invisible': [('limite','!=', True)]}"/>
+                        <div class="o_row" name="cantidad_limite" attrs="{'invisible': [('limite','!=', True)]}">       
+                            <field name="cantidad_limite" nolabel="1"/>
+                            <field name="request_unit" nolabel="1" readonly="1"/>
+                            <span>(s)</span>
+                        </div>
+                        <field name="notas"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

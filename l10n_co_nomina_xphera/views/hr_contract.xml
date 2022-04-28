@@ -1,0 +1,125 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_contract_inherit">
+            <field name="name">hr.contract.inherit</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='structure_type_id']" position="after">
+                    <field name="tipo_contrato" domain="[('type_id','=',structure_type_id)]" required="True"/>
+                </xpath>
+                <xpath expr="//group[@name='main_info']" position="after">
+                    <group name="auxilios">
+                        <group name="auxilios_empresa" string="Auxilios">
+                            <field name="auxilio_transporte"/>
+                            <field name="auxilio_conectividad"/>
+                        </group>
+                    </group>
+                    <group name="riesgo">
+                        <group name="riesgo_empleado" string="Riesgo">
+                            <field name="riesgo" required="True"/>
+                        </group>
+                    </group>
+                    <group name="salary">
+                        <group name="salary_empleado" string="Salario">
+                            <field name="salary_type" required="True"/>
+                        </group>
+                    </group>
+                    <group name="libranzas" invisible="False">
+                        <group name="libranzas_empleado" string="Libranzas" col="8">
+                            <field name="libranzas_CCF"/>
+                            <field name="libranzas_coperatica"/>
+                            <field name="credito_banco"/>
+                        </group>
+                    </group>
+                    <group name="embargos" invisible="False">
+                        <group name="embargos_empleado" string="Embargos Judiciales">
+                            <field name="embargo_judicial"/>
+                        </group>
+                    </group>
+                    <group name="no_salariales" invisible="False">
+                        <group name="pagos_no_salariales" string="Pagos Laborales No Salariales" col="8">
+                            <field name="aux_educacion"/>
+                            <field name="aux_vivienda"/>
+                            <field name="aportes_AFP"/>
+                            <field name="aux_alimentacion"/>
+                            <field name="bonificacion"/>
+                        </group>
+                    </group>
+                    <group name="primas" invisible="False">
+                        <group name="primas_empleado" string="Primas" col="8">
+                            <field name="prima_1"/>
+                            <field name="prima_2"/>
+                            <field name="prima_3"/>
+                            <field name="prima_4"/>
+                            <field name="prima_5"/>
+                            <field name="prima_6"/>
+                            <field name="prima_7"/>
+                            <field name="prima_8"/>
+                            <field name="prima_9"/>
+                            <field name="prima_10"/>
+                            <field name="prima_11"/>
+                            <field name="prima_12"/>
+                            <field name="total_prima_1"/>
+                            <field name="total_prima_2"/>
+                        </group>
+                    </group>
+                    <group name="cesantias" invisible="False">
+                        <group name="cesantias_empleado" string="Cesantias" col="8">
+                            <field name="cesantias_1"/>
+                            <field name="cesantias_2"/>
+                            <field name="cesantias_3"/>
+                            <field name="cesantias_4"/>
+                            <field name="cesantias_5"/>
+                            <field name="cesantias_6"/>
+                            <field name="cesantias_7"/>
+                            <field name="cesantias_8"/>
+                            <field name="cesantias_9"/>
+                            <field name="cesantias_10"/>
+                            <field name="cesantias_11"/>
+                            <field name="cesantias_12"/>
+
+                            <field name="total_cesantias_year"/>
+                        </group>
+                    </group>
+                    <group name="intereses_cesantias" invisible="False">
+                        <group name="intereses_cesantias_empleado" string="Intereses Cesantias" col="8">
+                            <field name="intereses_cesantias_1"/>
+                            <field name="intereses_cesantias_2"/>
+                            <field name="intereses_cesantias_3"/>
+                            <field name="intereses_cesantias_4"/>
+                            <field name="intereses_cesantias_5"/>
+                            <field name="intereses_cesantias_6"/>
+                            <field name="intereses_cesantias_7"/>
+                            <field name="intereses_cesantias_8"/>
+                            <field name="intereses_cesantias_9"/>
+                            <field name="intereses_cesantias_10"/>
+                            <field name="intereses_cesantias_11"/>
+                            <field name="intereses_cesantias_12"/>
+
+                            <field name="total_intereses_cesantias_year"/>
+                        </group>
+                    </group>
+                    <group name="vacaciones" invisible="False">
+                        <group name="vacaciones_empleado" string="Vacaciones" col="8">
+                            <field name="vacaciones_1"/>
+                            <field name="vacaciones_2"/>
+                            <field name="vacaciones_3"/>
+                            <field name="vacaciones_4"/>
+                            <field name="vacaciones_5"/>
+                            <field name="vacaciones_6"/>
+                            <field name="vacaciones_7"/>
+                            <field name="vacaciones_8"/>
+                            <field name="vacaciones_9"/>
+                            <field name="vacaciones_10"/>
+                            <field name="vacaciones_11"/>
+                            <field name="vacaciones_12"/>
+
+                            <field name="total_vacaciones"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo> 

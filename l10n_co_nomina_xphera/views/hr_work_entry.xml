@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_work_entry_horas">
+            <field name="name">hr.work.entry.horas</field>
+            <field name="model">hr.work.entry</field>
+            <field name="inherit_id" ref="hr_work_entry.hr_work_entry_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[1]/group[2]" position="after">
+                    <group>
+                        <field name="horas_diurnas_ordinarias"/>
+                        <field name="horas_nocturnas_ordinarias"/>
+                        <field name="horas_diurnas_festivas"/>
+                        <field name="horas_nocturnas_festivas"/>
+                    </group>
+                    <group>
+                        <field name="horas_extras_ordinarias_diurnas"/>
+                        <field name="horas_extras_ordinarias_nocturnas"/>
+                        <field name="horas_extras_festivas_diurnas"/>
+                        <field name="horas_extras_festivas_nocturnas"/>
+                    </group>
+                    <group>
+                        <field name="pay_festivos"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo> 
