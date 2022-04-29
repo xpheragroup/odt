@@ -14,12 +14,12 @@
         'hr_work_entry_contract',
     ],
     'data': [
-        'data/hr_payroll_co.xml',
         'views/hr_contract.xml',
         'views/hr_payslip.xml',
         'views/hr_work_entry.xml',
         'views/hr_work_entry_type.xml',
         'views/hr_rule_parameter.xml',
         'views/hr_leave_type.xml',
+        'data/hr_payroll_co.xml',
     ],
 }
