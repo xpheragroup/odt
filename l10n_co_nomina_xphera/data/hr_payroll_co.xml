@@ -1502,7 +1502,7 @@ elif IUVT > 2300:
 
         <!-- Tipos de Ausencia -->
         <!-- Tipos de Ausencia -->
-        <!-- Tipos de Ausencia -->
+        <!-- Tipos de Ausencia 
 
         <record id="hr_leave_type_vacaciones" model="hr.leave.type">
             <field name="name">Vacaciones</field>
@@ -1772,6 +1772,7 @@ La ARL asume el pago total (100%) por 180 días prorrogables por otro periodo eq
             <field name="cantidad_limite">0</field>
             <field name="notas"></field>
         </record>
-
+        -->
+        
     </data>
 </odoo>
