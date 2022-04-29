@@ -1,5 +1,6 @@
 <odoo>
     <data>
+        <!--    
         <record model="ir.ui.view" id="hr_payslip_inherit">
             <field name="name">hr.payslip.inherit</field>
             <field name="model">hr.payslip</field>
@@ -16,6 +17,7 @@
                 </xpath>
             </field>
         </record>
+        -->
 
         <record model="ir.ui.view" id="hr_payslip_horas">
             <field name="name">hr.payslip.horas</field>
