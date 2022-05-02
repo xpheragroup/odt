@@ -6,7 +6,7 @@
             <field name="model">hr.leave.type</field>
             <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//group[@name='calendar']" position="after">
+                <xpath expr="//group[@name='leave_validation']" position="after">
                     <group name="tiempo_limite" string="Límite de Tiempo">
                         <field name="limite"/>
                         <label for="cantidad_limite" attrs="{'invisible': [('limite','!=', True)]}"/>
