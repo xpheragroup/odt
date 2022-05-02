@@ -651,7 +651,7 @@ Aplica tambien como una situación administrativa por ausencia del trabajador.
         <record id="hr_rule_parameter_value_SMMLV" model="hr.rule.parameter.value">
             <field name="rule_parameter_id" ref="hr_rule_parameter_SMMLV"/>
             <field name="date_from" eval="datetime(2021, 1, 1).date()"/>
-            <field name="parameter_value">908526.00</field>
+            <field name="parameter_value">1000000.00</field>
         </record>
 
         <record id="hr_rule_parameter_value_hora_extra_diurna" model="hr.rule.parameter.value">
