@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <!--
+        
         <record model="ir.ui.view" id="hr_leave_type_habiles">
             <field name="name">hr.leave.type.habiles</field>
             <field name="model">hr.leave.type</field>
@@ -20,6 +20,6 @@
                 </xpath>
             </field>
         </record>
-        -->
+        
     </data>
 </odoo>
