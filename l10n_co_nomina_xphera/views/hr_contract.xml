@@ -9,7 +9,7 @@
                     <field name="tipo_contrato" domain="[('type_id','=',structure_type_id)]" required="True"/>
                 </xpath>
                 
-                <xpath expr="//group[@name='main_info']" position="after">
+                <xpath expr="//group[@name='salary_info']" position="after">
                     <group name="auxilios">
                         <group name="auxilios_empresa" string="Auxilios">
                             <field name="auxilio_transporte"/>
