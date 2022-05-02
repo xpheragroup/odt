@@ -4,6 +4,8 @@ from odoo import api, fields, models
 class HrPayslipWorkedDays(models.Model):
     _inherit = 'hr.payslip.worked_days'
 
+    prima_semestre_1 = fields.Boolean(string='Pago de Primera Prima')
+    prima_semestre_2 = fields.Boolean(string='Pago de Segunda Prima')
     numero_horas_diurnas_ordinarias = fields.Float(string='Horas Diurnas Ordinales')
     numero_horas_nocturnas_ordinarias = fields.Float(string='Horas Nocuturna Ordinales')
     numero_horas_diurnas_festivas = fields.Float(string='Horas Diurnas Festivas')
