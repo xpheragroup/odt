@@ -8,6 +8,7 @@ class HolidaysType(models.Model):
     limite = fields.Boolean(string='Límite de Tiempo')
     cantidad_limite = fields.Float(string='Tiempo Límite')
     notas = fields.Char(string='Notas')
+    code = fields.Char(string='Código')
 
     def _add_semana(self, context=None):
         return [('day', 'Día'), ('half_day', 'Medio día'), ('hour', 'Horas'), ('semana','Semana')]
